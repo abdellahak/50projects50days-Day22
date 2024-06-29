@@ -20,7 +20,7 @@ canvas.height =window.innerHeight - canvasOffsetY;
 
 
 let isPainting = false;
-let lineSize = 5;
+let lineSize = lineWidth.value;
 let startX;
 let startY;
 
@@ -66,6 +66,6 @@ if(!isPainting){
 ctx.lineWidth = lineSize;
 ctx.lineCap='round';
 
-ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
+ctx.lineTo(e.offsetX, e.offsetY);
 ctx.stroke();
 }
