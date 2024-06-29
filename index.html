@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 21 : Drag N Drop</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="tools">
+                <div class="options">
+                    <div class="title">
+                        Options:
+                    </div>
+                    <div class="line-width">
+                        <label for="lineWidth">Line Width :</label>
+                        <input type="range" id="lineWidth" min="1" max="50" step="1">
+                        <label for="" id="lineSize"><span id="lineWidthValue">1</span>px</label>
+                    </div>
+                    <div class="color-picker">
+                        <label for="selectedColor">Color :</label>
+                        <input type="color" id="selectedColor">
+                    </div>
+                </div>
+                <div class="close">
+                    <button class="button">Clear</button>
+                </div>
+            </div>
+            <div class="drawing-area">
+                <canvas id="drawingBoard"></canvas>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="https://kit.fontawesome.com/1fbfbd99d6.js" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
