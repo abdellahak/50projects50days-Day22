@@ -64,6 +64,7 @@ if(!isPainting){
     return;
 }
 ctx.lineWidth = lineSize;
+ctx.strokeStyle = color.value;
 ctx.lineCap='round';
 
 ctx.lineTo(e.offsetX, e.offsetY);
